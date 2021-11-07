@@ -28,7 +28,7 @@ def wishMe():
     else:
         speak("Good Evening!")
 
-    speak("I am Jarvis Ma'am. Hope you're having a great day")
+    speak("I am Julia Ma'am. Hope you're having a great day")
     speak("How may i help you Shruthi Ma'am")
 
 def takeCommand():
@@ -97,6 +97,12 @@ if __name__ == "__main__":
         elif 'open code' in query:
             codePath = "C:\\Users\\Haris\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
             os.startfile(codePath)
+        elif 'home' in query:
+            try:
+                speak("Hydrabad ma'am")
+            except Exception as e:
+                print(e)
+                speak("Sorry ma'am. I forgot your address")
 
         elif 'email' in query:
             try:
