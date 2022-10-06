@@ -5,6 +5,7 @@ import wikipedia #pip install wikipedia
 import webbrowser
 import os
 import smtplib
+import dropdown
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
@@ -112,12 +113,12 @@ if __name__ == "__main__":
             try:
                 speak("What should I say?")
                 content = takeCommand()
-                to = "shruthi@gmail.com"
+                to = "121810304002@gitam.in"
                 sendEmail(to, content)
                 speak("Email has been sent!")
             except Exception as e:
                 print(e)
-                speak("Sorry ma'am. I am not able to send this email")
+                speak("Sorry sir. I am not able to send this email")
                 
         elif 'birthday' in query:
             try:
