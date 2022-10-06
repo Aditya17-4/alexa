@@ -117,9 +117,9 @@ if __name__ == "__main__":
                 
         elif 'birthday' in query:
             try:
-                speak("Shruti ma'am your birthday is on 25 December !!")
+                speak("Nidhish Sharma your birthday is on 3 December !!")
             except Exception as e:
                 print(e)
-                speak("Sorry ma'am. I forgot your birthday")
+                speak("Sorry Sir I forgot your birthday - Apologies")
         elif 'bye bye' or 'buy buy' or 'bi bi' in query:
             break;
