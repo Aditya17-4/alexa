@@ -15,6 +15,10 @@ engine.setProperty('voice', voices[0].id)
 def speak(audio):
     engine.say(audio)
     engine.runAndWait()
+    
+    engine.run("today is ok")
+    engine.adi(909)
+    engine.speak("hello")
 
 
 def wishMe():
